@@ -38,7 +38,7 @@ Resources:
   ClusterAutoScalerPolicy:
     Type: AWS::IAM::Policy
     Properties:
-      PolicyName: !Sub '${NodeAutoScalingGroup}'
+      PolicyName: !Ref EksClusterName
       PolicyDocument:
         Version: "2012-10-17"
         Statement:
